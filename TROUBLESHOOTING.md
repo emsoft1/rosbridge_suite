@@ -5,13 +5,13 @@ Often the server breaks because it is using the wrong version of Tornado.  Torna
 To check your imported Tornado version, run:
 
 ```
-python -c 'import tornado; print tornado.version'
+python3 -c 'import tornado; print (tornado.version)'
 ```
 
 The imported version should the `apt` version:
 
 ```
-apt-cache show python-tornado | grep Version
+apt-cache show python3-tornado | grep Version
 ```
 
 If the versions don't match, it's likely that the wrong version of Tornado was installed with `pip`.  Try uninstalling it:
